@@ -11,7 +11,8 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: "Nunito", sans-serif;
-    background-color: #9FA3A6;
+    background: radial-gradient(circle, rgba(58,58,61,1) 0%, rgba(159,163,166,1) 100%);
+    min-height: 100vh;
 }
 
 header {
@@ -30,13 +31,13 @@ a {
 a:hover {
     color: #D7D7D9;
     transition: .3s ease-in-out;
-
 }
 
 main {
     max-width: 1200px;
     margin: 0 1rem;
     align-items: center;
+    width: 100%;
 }
 
 .profile_container {
@@ -46,9 +47,82 @@ main {
     gap: 2rem;
 }
 
+.profile_container h2 {
+    font-size: 2rem;
+}
+
+.profile_description > p {
+    font-size: .9rem;
+
+}
+
 .profile_avatar {
     width: 100%;
-    max-width: 24rem;
+    max-width: 20rem;
     border-radius: 4px;
     box-shadow: 4px 8px 12px #3C3D40;
+}
+
+.profile_location {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.profile_location > p {
+    font-size: 1.2rem;
+    margin: 7px 0 0 3px;
+}
+
+.profile_status {
+    font-size: 1.2rem;
+}
+
+.profile_misc {
+    display: flex;
+}
+
+.profile_misc > a {
+    margin: 3rem 1rem 0 0;
+}
+
+.profile_about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile_about > h3 {
+    background-color: #666A73;
+    border-radius: 14px;
+    padding: 4px 13px;
+    margin-bottom: 20px;
+    margin-top: 5rem;
+}
+
+.profile_about > p {
+    margin-bottom: 3rem;
+}
+
+.profile_know {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.profile_know > h3 {
+    background-color: #666A73;
+    border-radius: 14px;
+    padding: 4px 13px;
+    margin-bottom: 20px;
+}
+
+.profile_know_imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
 }
