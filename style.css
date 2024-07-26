@@ -161,6 +161,8 @@ main {
     max-width: 1200px;
     background-color: #666A73;
     margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 2.5rem;
     border-radius: 4px;
     box-shadow: 4px 8px 12px #3C3D40;
@@ -168,14 +170,13 @@ main {
 
 .profile_work_img {
     width: 100%;
-    max-width: 19rem;
-    height: 19rem;
+    max-width: 21rem;
     object-fit: cover;
     padding: 1.5rem;
 }
 
 .profile_work_description {
-    padding-left: 4.5rem;
+    padding-left: 2.5rem;
 }
 
 .profile_work_description > span {
