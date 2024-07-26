@@ -270,10 +270,12 @@ footer {
 
 .brilha {
     background-color: #D7D7D9;
+    border-radius: 24px;
     transition: 1s ease-in-out;
 }
 
 .desbrilha {
     background-color: none;
+    border-radius: 24px;
     transition: 1s ease-in-out;
 }
