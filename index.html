@@ -10,9 +10,9 @@
 
 <body>
     <header>
-        <a href="#about">Sobre</a>
-        <a href="#work">Trabalho</a>
-        <a href="#contact">Contato</a>
+        <a onclick="scrollToSection('about')">Sobre</a>
+        <a onclick="scrollToSection('work')">Trabalho</a>
+        <a onclick="scrollToSection('contact')">Contato</a>
     </header>
     <main>
         <section class="profile_container">
@@ -41,7 +41,8 @@
         <section id="about" class="profile_about">
             <h3>Sobre mim</h3>
             <p>
-                Tenho 16 anos, estudo programação na Prismatech, e desejo me tornar um profissional na área de desenvolvimento.
+                Tenho 16 anos, estudo programação na Prismatech, e desejo me tornar um profissional na área de
+                desenvolvimento.
             </p>
         </section>
         <hr>
@@ -87,7 +88,8 @@
         </section>
         <section id="contact" class="profile_contact">
             <h3>Contato</h3>
-            <p style="font-weight: 600; margin-bottom: 1rem;">E aí? Fique a vontade para me contatar se precisar de um desenvolvedor, tiver
+            <p style="font-weight: 600; margin-bottom: 1rem;">E aí? Fique a vontade para me contatar se precisar de um
+                desenvolvedor, tiver
                 dúvidas ou simplesmente quiser se conectar.</p>
             <p style="font-weight: 650;">📧 wantiltrabalhos@gmail.com</p>
             <p style="font-weight: 700; ">📞 27 99708-3033</p>
@@ -107,6 +109,33 @@
             <span>2024 | Desenvolvido por <a href="https://github.com/Andre-Wantil">André Wantil</a> 😃</span>
         </div>
     </footer>
+    <script>
+        const scrollToSection = (id) => {
+            const element = document.getElementById(id);
+
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+            setTimeout(
+                () => {
+                    element.classList.add('brilha')
+                },
+                500
+            );
+            setTimeout(
+                () => {
+                    element.classList.add('desbrilha')
+                },
+                900
+            );
+            setTimeout(
+                () => {
+                    element.classList.remove('brilha')
+                },
+                1100
+            );
+        };
+    </script>
 </body>
 
 </html>

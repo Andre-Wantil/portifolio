@@ -32,6 +32,7 @@ a {
 a:hover {
     color: #D7D7D9;
     transition: .3s ease-in-out;
+    cursor: pointer;
 }
 
 main {
@@ -265,4 +266,14 @@ footer {
 .profile_copyright a:hover {
     color: #D7D7D9;
     transition: .3s ease-in-out;
+}
+
+.brilha {
+    background-color: #D7D7D9;
+    transition: 1s ease-in-out;
+}
+
+.desbrilha {
+    background-color: none;
+    transition: 1s ease-in-out;
 }
