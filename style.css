@@ -98,6 +98,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+    border-radius: 24px;
 }
 
 .profile_about > h3 {
@@ -147,6 +148,7 @@ main {
     align-items: center;
     flex-direction: column;
     margin-top: 2rem;
+    border-radius: 24px;
 }
 
 .profile_work > h3 {
@@ -216,6 +218,7 @@ main {
     flex-direction: column;
     margin-top: 2rem;
     width: 100%;
+    border-radius: 24px;
 }
 
 .profile_contact > h3 {
