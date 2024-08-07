@@ -11,26 +11,37 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: "Nunito", sans-serif;
-    background: radial-gradient(circle, rgba(58,58,61,1) 0%, rgba(159,163,166,1) 100%);
+    background-image: url('/source/img/library.jpg');
     min-height: 100vh;
     width: 100%;
+    
+}
+
+body p {
+    color: #000000;
+    font-weight: 690;
 }
 
 header {
     display: flex;
+    justify-content: center;
     gap: .9rem;
-    margin: 2rem 0;
+    background: rgba(179, 179, 179, 0.7);
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 0;
 }
 
 a {
     text-decoration: none;
-    color: #212226;
+    color: #181818;
     font-weight: 500;
     font-size: 1.25rem;
 }
 
 a:hover {
-    color: #D7D7D9;
+    color: #ffffff;
+    font-weight: 700;
     transition: .3s ease-in-out;
     cursor: pointer;
 }
@@ -40,6 +51,7 @@ main {
     margin: 0 1rem;
     align-items: center;
     width: 100%;
+    background: rgba(179, 179, 179, 0.7);
 }
 
 .profile_container {
@@ -98,7 +110,6 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 24px;
 }
 
 .profile_about > h3 {
@@ -148,7 +159,6 @@ main {
     align-items: center;
     flex-direction: column;
     margin-top: 2rem;
-    border-radius: 24px;
 }
 
 .profile_work > h3 {
@@ -218,7 +228,6 @@ main {
     flex-direction: column;
     margin-top: 2rem;
     width: 100%;
-    border-radius: 24px;
 }
 
 .profile_contact > h3 {
@@ -267,18 +276,16 @@ footer {
 }
 
 .profile_copyright a:hover {
-    color: #D7D7D9;
+    color: #ffffff;
     transition: .3s ease-in-out;
 }
 
 .brilha {
-    background-color: #D7D7D9;
-    border-radius: 24px;
+    background-color: #ffffff;
     transition: 1s ease-in-out;
 }
 
 .desbrilha {
     background-color: none;
-    border-radius: 24px;
     transition: 1s ease-in-out;
 }
