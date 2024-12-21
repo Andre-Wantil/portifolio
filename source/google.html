@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/google-icon.png">
+    <title>Google</title>
+</head>
+<body>
+    <header class="topside-menu">
+        <a class="gmail-link normal-style" href="https://mail.google.com/">Gmail</a>
+        <a class="images-link normal-style" href="https://images.google.com.br/">Imagens</a>
+        <button class="menu-button button-style" type="menu">
+            <img src="./img/google-menu.svg" alt="Menu">
+        </button>
+        <button class="profile-button button-style" type="button">
+            <img src="./img/wallace.jpg" alt="Imagem do perfil">
+        </button>
+    </header>
+    <main class="main">
+        <img class="google-logo" src="./img/google-logo.png" alt="Logo da Google">
+        <input class="search-bar" type="text">
+
+        <div class="main-buttons">
+            <button class="button-main-style" type="button">Pesquisa Google</button>
+            <button class="button-main-style" type="button">Estou com sorte</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <span>Brasil</span>
+        <div class="footer-container">
+            <div class="footer-container-left">
+                <a href="">Sobre</a>
+                <a href="">Publicidade</a>
+                <a href="">Negócios</a>
+                <a class="problem" href="">Como funciona a Pesquisa</a>
+            </div>
+            <div class="footer-container-right">
+                <a href="">Privacidade</a>
+                <a href="">Termos</a>
+                <a href="">Configurações</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('a').hover(
+                function () {
+                    $(this).addClass('hover-style'); // Adiciona a classe ao passar o mouse
+                },
+                function () {
+                    $(this).removeClass('hover-style'); // Remove a classe ao tirar o mouse
+                }
+            );
+        
+            $('.button-style').hover(
+                function () {
+                    $(this).addClass('menu-hover')
+                },
+                function () {
+                    $(this).removeClass('menu-hover')
+                }
+            )
+        
+            $('.button-main-style').hover(
+                function () {
+                    $(this).addClass('button-main-style-hover')
+                },
+                function () {
+                    $(this).removeClass('button-main-style-hover')
+                }
+            )
+        });
+    </script>
+</body>
+</html>
